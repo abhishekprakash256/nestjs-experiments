@@ -9,4 +9,10 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+
+  @Get('about')
+  getAbout(): string {
+    return '<h1>About Page</h1>:';
+  }
 }
